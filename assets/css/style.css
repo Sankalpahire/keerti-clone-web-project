@@ -1,0 +1,29 @@
+
+.container-fluid.yellow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*.text-blue {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the paragraph text */
+.topbar-txt {
+    font-size: 20px;
+    padding-top: 15px;
+    margin-right:200px;
+}
+
+.text-white {
+    padding-top: 15px; 
+    padding-left: 50px;
+}
+
+i.fa-sharp,
+i.fa-solid {
+    font-size: 24px; 
+    margin-right: 10px; 
+}
