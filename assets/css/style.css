@@ -205,7 +205,7 @@ i.fa-solid {
 }
 
 .container-banner2 {
-    background-image: url('/assets/img/fixed\ background.jpg'); 
+    background-image: url('/assets/img/fixed/background.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -221,7 +221,7 @@ i.fa-solid {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('/assets/img/fixed\ background.jpg'); 
+    background-image: url('/assets/img/background.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
