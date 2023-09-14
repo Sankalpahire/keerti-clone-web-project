@@ -2,39 +2,391 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>keerti clone</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 </head>
-<body style="margin:0;">
+<body>
     
-    <div class="container-fluid yellow-container" style="background-color: yellow; font-size: 20px; height: 55px;">
-        <div class="text-blue col-lg-4 col-md-12 d-flex align-items-center">
-            <div class="text-center text-lg-left text-md-left">
-                <p class="topbar-txt mt-1" style="font-size: 20px; height:55px;">"Celebrating 25 Years in Education and Training"</p>
-            </div>
-        </div>
-    </div>
+<div class="scrolling-text-container">
+    <p class="scrolling-text">
+        Celebrating 25 Years in Education and Training
+    </p>
+</div>
     
-    <div class="container-fluid" style="background-color: blue; font-size: 20px; height: 55px;">
+    <div class="container-fluid bg-primary py-2">
         <div class="row align-items-center justify-content-center">
-            <div class="text-white col-lg-4 col-md-6">
-                <div class="text-center text-lg-left text-md-left">
-                    <i class="fa-sharp fa-solid fa-square-phone"></i>
-                    +91 8850191948
-                </div>
+            <div class="col-lg-4 col-md-6 text-center text-lg-left text-md-left text-white">
+                <i class="fas fa-phone-alt"></i> +91 8850191948
             </div>
-            <div class="text-white col-lg-4 col-md-6">
-                <div class="text-center text-lg-left text-md-left">
-                    <i class="fa-solid fa-earth-americas"></i>
-                    info@keerti.org
+            <div class="col-lg-4 col-md-6 text-center text-lg-left text-md-left text-white">
+                <i class="fas fa-globe-americas"></i> info@keerti.org
+            </div>
+        </div>
+    </div>
+<!--banner & navbar--> 
+  <section id="banner-bg" class="banner-video">
+    <div class="container-fluid" style="padding: 0;">
+        <div class="embed-responsive embed-responsive-16by9">
+            <video autoplay muted loop id="myVideo" class="embed-responsive-item">
+                <source src="assets/img/pexels-mikhail-nilov-7989448 (1080p).mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/img/keerti  logo.png" alt="" width="150px" height="110px" style="margin-right: 10px;">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        ABOUT US
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <li><a class="dropdown-item" href="#">OVERVIEW</a></li>
+                        <li><a class="dropdown-item" href="#">GROUP INITIATIVE</a></li>
+                        <li><a class="dropdown-item" href="#">ACADEMICS</a></li>
+                        <li><a class="dropdown-item" href="#">TESTIMONIAL</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        COURSES
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                        <li><a class="dropdown-item" href="#">ACCOUNTS AND TAXATION</a></li>
+                        <li><a class="dropdown-item" href="#">ANIMATION</a></li>
+                        <li><a class="dropdown-item" href="#">BASIC SOFTWARE</a></li>
+                        <li><a class="dropdown-item" href="#">DATA ANALYSIS</a></li>
+                        <li><a class="dropdown-item" href="#">DESIGNING AND DEVELOPMENT</a></li>
+                        <li><a class="dropdown-item" href="#">HARDWARE AND NETWORKING</a></li>
+                        <li><a class="dropdown-item" href="#">DIGITAL MARKETING</a></li>
+                        <li><a class="dropdown-item" href="#">SOFTWARE PROGRAMMING</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">CENTERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">FRANCHISE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">PLACEMENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">CAREERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!--banner text-->
+    <!--banner content-->
+    <div class="container-text" style="padding: 20px; padding-left: 50px;">
+        <div class="row" >
+            <div class="col-lg-12 col-md-10">
+                <div class="block">
+                    <div class="block">
+                        <span class="d-block mb-3 text-white text-capitalize" style="font-size: 48px; font-style: oblique; color: #efbb2b !important;">GAIN CONFIDENCE!</span>
+                        <h1 class="animated fadeInUp mb-3" style="font-size: 48px; font-style: italic; color:white;">Gaining the Confidence makes you shine</h1>
+                        <button type="button" class="btn btn-primary">ENQUIRE NOW</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
+</section>
+  <!--cards-->
+  <div class="card-container"  >
+      <div class="card-icon shadow" style="background-color:#10c45c; height: 382px; width: 292px;" >
+      <img src="assets/img/icon52.png" style="height: 70px; width: 70px; padding-top:-40px">
+      <div >
+      <h5 class="card-title">Experienced
+            Faculties</h5>
+          <p class="card-text" >Our faculty pool comprises of industry experienced professional,
+            having a strong passion for training youngsters to make them employable.</p>
+        </div>
+      </div>
+      <div class="card-icon shadow" style="background-color:#fdc735 ;  height: 382px; width: 292px; ">
+      <img src="assets/img/dimond.png" style="height: 70px; width: 70px;">
+        <div >
+          <h5 class="card-title">Unique
+            Methodology</h5>
+          <p class="card-text">Our methodology of training delivers the knowledge and skills to our students through a multimodal 
+            approach comprising of assignments, case studies, project, and industry seminars.</p>
+        </div>
+      </div>
+      <div class="card-icon shadow" style="background-color: #F26225;  height: 382px; width: 292px;" >
+      <img style="width: 100px;" src="assets/img/certificate.png"style="height: 70px; width: 70px;">
+        <div>
+          <h5 class="card-title">Recognised Certifications</h5>
+          <p class="card-text">Successful students not only earn the Keerti certification but also have the
+            opportunity to earn industry-recognized certifications from Tally and Microsoft.</p>
+          
+        </div>
+      </div>
+      <div class="card-icon shadow" style="background-color: #307ad5;  height: 382px; width: 292px;" >
+      <img src="assets/img/man.png" style="height: 70px; width: 70px;">
+        <div>
+          <h5 class="card-title">Outstanding Placements</h5>
+          <p class="card-text">Our dedicated placement team prepares and supports all students to perform at our 
+            placement drives, which enables them to acquire a successfull career.</p>
+        
+        </div>
+      </div>
+   </div>
+   <!--text after card-->
+   <div class="text1">
+    <h1>POPULAR CERTIFIED COMPUTER COURSES</h1>
+   </div>
+
+<!-- Courses card -->
+<div class="row justify-content-center ">
+    <div class="col-md-2">
+        <div class="card shadow">
+            <img src="assets/img/tax.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <p class="card-text">Financial Accounting and Taxation</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card shadow">
+            <img src="/assets/img/digital.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <p class="card-text">Digital Marketing</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card shadow">
+            <img src="/assets/img/AE1.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <p class="card-text">Advanced Excel</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card shadow">
+            <img src="/assets/img/web.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <p class="card-text">Web Design and Development</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--large button-->
+<div class="largebutton" style="padding-top: 25px;">
+    <button type="button" class="btn btn-warning " style="margin-left:820px ;background-color:#e67015; margin-bottom:25px;" >CLICK HERE FOR MORE COURSES</button>
+</div>
+<!--fixed image banner-->
+<!--keerti group achivement section-->
+<div class="container-fluid container-banner2" style="height: 400px;">
+    <h1 class="text-center" style="color: antiquewhite;">KEERTI GROUP ACHIEVEMENTS</h1>
+    <div class="container">
+        <div class="row">
+          <div class="achievement-item icons col-sm-6 col-md-2 col-md-2">
+            <i class="fa-solid fa-medal"></i>
+            <h2>25+ Yrs</h2>
+            <p>EDU <br>EXCELLENCE</p>
+          </div>
+          <div class="achievement-item icons col-sm-6 col-md-2 col-md-2">
+            <i class="fa-solid fa-book"></i>
+            <h2>30+</h2>
+            <p>JOB ORIENTED <br>COURSES</p>
+          </div>
+          <div class="achievement-item icons col-sm-6 col-md-2 col-md-2">
+            <i class="fa-solid fa-network-wired"></i>
+            <h2>90+</h2>
+            <p>NETWORK <br>OF CENTERS</p>
+          </div>
+          <div class="achievement-item icons col-sm-6 col-md-2 col-md-2">
+            <i class="fa-regular fa-handshake"></i>
+            <h2>100+</h2>
+            <p>RECRUITERS <br>CONNECT</p>
+          </div>
+          <div class="achievement-item icons col-sm-6 col-md-2 col-md-2">
+            <i class="fa-solid fa-people-group"></i>
+            <h2>6 LAKHS</h2>
+            <p>STUDENT<br>TRAINED</p>
+          </div>
+        </div>
+      </div>
+</div>
+
+<!--100+ recruiters secion-->
+<div class="container-fluid recruiter-section">
+    <div class="recruiter-content">
+        <i class="fa-regular fa-handshake"></i>
+        <h1>We are proud to have 100+ Recruiters</h1>
+    </div>
+</div>
+<div><h2 class="text-center">Testimonials</h2>
+    <h2 class="text-center">Our Associations</h2>
+</div>
+
+<!--  -->
+
+<div class="container" style="background-color: rgb(255, 255, 255);">
+    <div class="row">
+        <div class="col-md-6" style="max-width: 400px; margin: 20px auto; margin-top:40px;">
+            <!-- Testimonials Section -->
+          
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Testimonial Items -->
+                <div class="carousel-inner">
+                    <!-- Testimonial Item 1 and 2 (Active) -->
+                    <div class="carousel-item active">
+                        <div class="testimonial-item">
+                            <h5 class="testimonial-name">SANKALP AHIRE</h5>
+                            <p class="testimonial-role">UX Designer</p>
+                            <p class="testimonial-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                                officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Testimonial Item 3 and 4 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-item">
+                            <h5 class="testimonial-name">PARAMESWAR NAIR</h5>
+                            <p class="testimonial-role">Photographer</p>
+                            <p class="testimonial-text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                praesentium voluptatum deleniti atque corrupti.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="background-color: rgba(231, 228, 228, 0.5);  border: none;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" style="background-color: rgba(231, 228, 228, 0.5); border: none;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-6" style="max-width: 400px; margin: 0 auto;">
+            <!-- Marquee Section -->
+            <div class="marquee">
+                <marquee scrollamount="5" direction="left" behavior="alternate" scrolldelay="5">
+                    <img src="assets/img/cu.jpg" style="height: 255px; width: 379px;">
+                    <img src="assets/img/micro.jpg" style="height: 255px; width: 379px;">
+                    <img src="assets/img/nsdc.jpg" style="height: 255px; width: 379px;">
+                    <img src="assets/img/tally.jpg" style="height: 255px; width: 379px;">
+                </marquee>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--marqee-->
+
+
+        
+<!-- Footer -->
+<footer class="footer">
+    <div class="container-footer" style="height: 400px;background-color: #1d1919;">
+      <div class="row">
+        <!-- Column 1: About Us -->
+        <div class="col-12 col-sm-6 col-md-3 footer-about" style="margin-top: 30px; margin-left:60px;">
+          <h3 class="footer-logo">ABOUT US</h3>
+          <p>
+            Keerti Institute, an initiative of KEERTI KNOWLEDGE AND SKILLS LTD., is an institution that conducts training programs aimed at helping young career seekers understand the basic operational functioning of the sector and the job role they aspire to take on. Our uniquely designed programs empower young individuals to garner skills and knowledge for the modern global industry.
+          </p>
+          <div class="footer-icons">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div style="margin-top: 10px;"><button type="button" class="btn btn-outline-light">READ MORE</button></div>
+        </div>
+  
+        <!-- Column 2: Quick Links -->
+        <div class="col-12 col-sm-6 col-md-3 footer-links" style="margin-right: -150px; margin-top: 30px; margin-left:60px;">
+          <h3>QUICK LINKS</h3>
+          <ul>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">CENTERS</a></li>
+            <li><a href="#">FRANCHISE</a></li>
+            <li><a href="#">PLACEMENTS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">TESTIMONIAL</a></li>
+          </ul>
+        </div>
+  
+        <!-- Column 3: Contact Us -->
+        <div class="col-12 col-sm-6 col-md-3 footer-about" style="margin-top: 30px; margin-left:30px;">
+          <h3 class="footer-logo">CONTACT US</h3>
+          <div class="footer-icons">
+            <i class="fa-solid fa-location-dot"></i> 9th Floor, Pinnacle Corporate Park, 12/ A, Kolivery Village, MMRDA Area, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051<br>
+            <i class="fa-solid fa-phone"></i> +91 8850191948<br>
+            <i class="fa-solid fa-envelope"></i> info@keerti.org
+          </div>
+        </div>
+  
+        <div class="col-12 col-sm-6 col-md-3 footer-follow-us" style="margin-top: 30px;">
+            <!-- Follow Us content -->
+            <h3 style="margin-left:100px" style="color: white;">FOLLOW US</h3>
+            <ul class="follow-us-icons">
+                <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0" style="margin-top:27px ; background-color:grey;">
+        <div class="footer-bottom" >
+          <p>© 2023 clone project for education purpose. All Rights Reserved By KEERTI GROUP.</p>
+          <p> MADE BY <a href="https://in.linkedin.com/in/sankalp-ahire-315b30274">SANKALP</a> & <a href="https://in.linkedin.com/in/parameswar-s-nair-304992285">PARAMESWAR</a></p>
+        </div>
+      </div>
+    </div>
+  
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
 
 
 

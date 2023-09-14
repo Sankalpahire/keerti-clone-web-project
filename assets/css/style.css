@@ -1,29 +1,433 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
 
-.container-fluid.yellow-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-/*.text-blue {
-    display: flex;
-    align-items: center;
+
+.scrolling-text-container {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: yellow;
+    padding-top: 10px;
 }
 
-/* Style the paragraph text */
+.scrolling-text {
+    animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
 .topbar-txt {
     font-size: 20px;
     padding-top: 15px;
-    margin-right:200px;
+    margin-right: 200px;
 }
 
 .text-white {
-    padding-top: 15px; 
+    padding-top: 15px;
     padding-left: 50px;
 }
 
 i.fa-sharp,
 i.fa-solid {
-    font-size: 24px; 
-    margin-right: 10px; 
+    font-size: 24px;
+    margin-right: 10px;
 }
+
+/* Styles for the video banner */
+#banner {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+@media (max-width: 1000px) {
+    #banner , #myvideo {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar , .navbar-nav {
+        flex-wrap: wrap;
+    }
+}
+.navbar {
+    color: #fff !important; 
+   padding-top: 25px !important;
+}
+
+.navbar-nav {
+    justify-content: center !important; 
+    margin-right: 300px;
+}
+
+.navbar-brand {
+    padding-left: 330px; 
+}
+
+
+.navbar-nav .nav-link {
+    color: #fff !important; 
+    font-weight: bold; 
+    margin-left: 10px; 
+}
+
+
+.navbar-nav .nav-link.active {
+    border-radius: 5px; 
+}
+
+
+.dropdown-menu {
+    border: none; 
+}
+
+/* Dropdown item styles */
+.dropdown-item {
+    color: #fff; 
+}
+
+
+.dropdown-item:hover {
+    color: #fff; 
+}
+
+.container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 100vh; 
+    text-align: center; 
+    
+}
+
+.container-text .block {
+    margin: 0 auto; 
+    max-width: 600px; 
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    justify-content: center;
+    gap: 20px; 
+    padding: 30px;
+    margin-top: -420px; 
+    margin-left: 325px;
+}
+
+.card-icon {
+    width: 100%;
+    height: 400px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+.card-icon:hover {
+    margin-top: -40px; 
+}
+
+.text1 {
+    text-align: center; 
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.text1 h1 {
+    font-size: 28px; 
+    font-weight: bold; 
+    color: #333;
+    margin: 0;
+}
+
+/* Center the row of cards */
+.row.justify-content-center {
+    justify-content: center;
+    margin-left: 0; 
+    margin-right: 0; 
+    overflow-x: hidden; 
+}
+
+
+.card.shadow {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+
+.card.shadow:hover {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+
+.card.shadow .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card.shadow .card-body p.card-text {
+    margin-bottom: 10px; 
+}
+
+.container-banner2 {
+    background-image: url('/assets/img/fixed\ background.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center; 
+    padding: 50px 0; 
+   
+}
+
+
+.container-banner2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('/assets/img/fixed\ background.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.container-fluid.container-banner2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: space-between;
+    height: 400px;
+}
+
+.container-fluid.container-banner2 h1{
+  margin-left: 650px;
+}
+
+.achievement-item {
+    margin-left: 30px;
+    color: #fff;
+}
+
+
+
+.achievement-item i {
+    font-size: 90px; 
+    text-align: center;
+   
+}
+
+
+.achievement-item h2 {
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+
+.achievement-item p {
+    font-size: 18px; 
+}
+
+.recruiter-section {
+    background-color: #E67015;
+    margin-top: 20px;
+    height: 225px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.recruiter-content {
+    text-align: center;
+    color: white;
+}
+
+
+.fa-regular.fa-handshake {
+    font-size: 90px;
+    color: white;
+}
+
+   /* Custom CSS to adjust button positioning */
+   .carousel-control-prev,
+   .carousel-control-next {
+       top: 50%;
+       transform: translate x(-50%);
+       
+       border: none; /* Remove button border */
+   }
+
+   /* Add border and padding to the testimonial container */
+   .container-testimonial {
+       border: 1px solid #ccc; /* Add a border */
+       padding: 20px; /* Add padding */
+       width: 600px !important;
+   }
+
+
+   .footer-about {
+color: white;
+   }
+
+.footer-follow-us h3 , .footer-links h3 {
+ color: white;
+}
+
+   .footer{
+    margin-top: 30px;
+    overflow-x: hidden;
+   }
+/* Center the "Follow Us" section above the icons */
+.follow-us {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.footer-column {
+    margin: 0 10px;
+    padding: 50px;
+    background-color: rgb(172, 51, 51) !important; /* Set a grey background */ 
+    width: calc(20% - 20px);
+    text-align: center;
+}
+
+/* Style for the Follow Us section */
+.follow-us-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Ensure the icons are in a row */
+    justify-content: center; /* Center icons horizontally */
+    margin-top: 20px;
+}
+
+.follow-us-icons li {
+    margin: 10px; /* Reduce gap between icons */
+}
+
+.follow-us-icons a {
+    text-decoration: none;
+    color: white !important;
+    transition: transform 0.3s ease;
+}
+
+.follow-us-icons i {
+    font-size: 40px;
+    color: white !important;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 3px;
+}
+
+/* Different hover colors for each icon */
+.follow-us-icons li.facebook:hover i {
+    background-color: #3b5998;
+}
+
+.follow-us-icons li.twitter:hover i {
+    background-color: #00aced;
+}
+
+.follow-us-icons li.instagram:hover i {
+    background-color: #bc2a8d;
+}
+
+.follow-us-icons li.google:hover i {
+    background-color: #dd4b39;
+}
+
+.follow-us-icons li.whatsapp:hover i {
+    background-color: #4dc247;
+}
+
+/* Remove text decoration from Quick Links list items */
+.footer-links ul li a {
+    text-decoration: none;
+}
+
+/* Reduce gap between Quick Links and Contact Us */
+.footer-links {
+    margin-top: 10px; /* Reduce the margin here */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color:#000;
+    }
+    
+    .footer-bottom p {
+    margin: 0;
+    color:#ccc;
+    }
+    
+    .footer-bottom a {
+    color: white ;
+    text-decoration: none;
+    }
+    
+    .footer-bottom a:hover {
+    color: #f51f8a;
+    }
+  
+    .footer-bottom {
+        bottom: 0;
+        width: 100%;
+        background-color: #000;
+        text-align: center;
+        padding: 10px 0; /* Add padding for spacing */
+        z-index: 1000; /* Ensure it's above other content */
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+    }
+    
+    .footer-bottom a {
+        color: #777777;
+        text-decoration: none;
+    }
+    
+    /* Hover effect for footer bottom links */
+    .footer-bottom a:hover {
+        color: #1f83f5;
+    }
